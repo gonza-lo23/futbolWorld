@@ -1,4 +1,9 @@
-img {
-  height: 11 px;
-  width: 11px;
+.card img {
+  width: 255px;
+  height: auto;
+}
+
+.card2 {
+  display: flex;
+  justify-content: space-around;
 }

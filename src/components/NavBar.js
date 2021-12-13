@@ -1,10 +1,16 @@
-import React from 'react'
-import '../styles/NavBar.css'
+import * as React from 'react';
+import '../styles/NavBar.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import { FaFutbol } from "react-icons/fa"
+import { FaFutbol } from "react-icons/fa";
 
 function NavBar() {
+  const [counter, setCounter]= React.useState(0);
+
+  const handleClick = () =>{
+    setCounter((prevState) => prevState + 1)
+  }
+
     return (
         <div>
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark" >
@@ -32,6 +38,12 @@ function NavBar() {
         
         <li className="nav-item">
           <a className="nav-link pr-5">banderines</a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link pr-5">
+            {counter}
+            <button onClick={handleClick}>cambiar estado</button>
+          </a>
         </li>
       </ul>
     </div>

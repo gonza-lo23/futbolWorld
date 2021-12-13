@@ -9,6 +9,8 @@ const Body = () => {
         <div className='image'>
            
           <Panels/>
+          <Panels/>
+
          
         </div>
     );

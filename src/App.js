@@ -9,6 +9,7 @@ function App() {
     <div className="App">
       <NavBar/>
       <Carousel/>
+      <h1>Nuestros productos</h1>
        <Body/>
        
 
