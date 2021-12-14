@@ -1,9 +1,8 @@
 import * as React from 'react';
 import '../styles/NavBar.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import {Link} from 'react-router-dom';
 import { FaFutbol } from "react-icons/fa";
-import { IoCartOutline } from "react-icons/io5";
 
 
 function NavBar({props}) {
@@ -25,7 +24,7 @@ function NavBar({props}) {
         <div>
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark" >
   <div className="container-fluid">
-    <a className="navbar-brand pl-5" href="#">Futbol World <FaFutbol /> </a>
+    <Link className="navbar-brand pl-5" to="/">Futbol World <FaFutbol /> </Link>
     
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
@@ -33,32 +32,22 @@ function NavBar({props}) {
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav ml-auto">
         <li className="nav-item">
-          <a className="nav-link  pr-5" aria-current="page" href="#">Home</a>
+          <Link className="nav-link  pr-5" aria-current="page" to="/Home">Home</Link>
         </li>
         <li className="nav-item">
-          <a className="nav-link pr-5" href="#">Botas</a>
+          <Link className="nav-link pr-5" to="/">Botas</Link>
         </li>
         <li className="nav-item">
-          <a className="nav-link pr-5" href="#">Camisetas</a>
+          <Link className="nav-link pr-5" to="/">Camisetas</Link>
         </li>
         
         <li className="nav-item">
-          <a className="nav-link pr-5" href="#">Balones</a>
+          <Link className="nav-link pr-5" to="/">Balones</Link>
         </li>
         
         <li className="nav-item">
-          <a className="nav-link pr-5" href="#">banderines</a>
+          <Link className="nav-link pr-5" to="/">banderines</Link>
         </li>
-        <li className="nav-item">
-          <a className="nav-link pr-5">
-            {counter}
-            <button onClick={handleClick}>cambiar estado</button>
-          </a>
-        </li>
-        <button onClick={handleClick}>cambiar estado</button>
-          <h1><IoCartOutline/></h1>
-        <button onClick={handleClick}>cambiar estado</button>
-
       </ul>
     </div>
   </div>

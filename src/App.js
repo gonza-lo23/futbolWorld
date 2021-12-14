@@ -1,8 +1,11 @@
-
+import * as React from 'react';
+import { Routes, Route, BrowserRouter } from 'react-router-dom';
 import NavBar from './components/NavBar';
-import Body from './components/Body.js';
-import Carousel from './components/Carousel.js';
+import Home from './pages/Home';
+import NotFound from './pages/NotFound.jsx';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function App() {
 
@@ -16,15 +19,16 @@ function App() {
   ]
   return (
     <div className="App">
-      
+      <BrowserRouter>
       <NavBar props = {5}/>
-      <Carousel/>
-      <h1>Nuestros productos</h1>
-       <Body/>
+      <Routes>
+
+      <Route  path="*" component={NotFound}/>       
+      <Route  exact path="/Home" component={Home}/>       
        
-       {productos.map((producto)=>{
-        return<li>{producto.name}</li>
-      })}
+      </Routes>
+      <footer>esto es un footer</footer>
+      </BrowserRouter>
     </div>
   );
 }
