@@ -3,11 +3,21 @@ import '../styles/NavBar.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { FaFutbol } from "react-icons/fa";
+import { IoCartOutline } from "react-icons/io5";
 
-function NavBar() {
+
+function NavBar({props}) {
+  
   const [counter, setCounter]= React.useState(0);
 
+  React.useEffect(()=>{
+    console.log("componente renderizado")
+  },[props])
+
   const handleClick = () =>{
+    setCounter((prevState) => prevState + 1)
+  }
+  const handleClick2 = () =>{
     setCounter((prevState) => prevState + 1)
   }
 
@@ -29,15 +39,15 @@ function NavBar() {
           <a className="nav-link pr-5" href="#">Botas</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link pr-5">Camisetas</a>
+          <a className="nav-link pr-5" href="#">Camisetas</a>
         </li>
         
         <li className="nav-item">
-          <a className="nav-link pr-5">Balones</a>
+          <a className="nav-link pr-5" href="#">Balones</a>
         </li>
         
         <li className="nav-item">
-          <a className="nav-link pr-5">banderines</a>
+          <a className="nav-link pr-5" href="#">banderines</a>
         </li>
         <li className="nav-item">
           <a className="nav-link pr-5">
@@ -45,6 +55,10 @@ function NavBar() {
             <button onClick={handleClick}>cambiar estado</button>
           </a>
         </li>
+        <button onClick={handleClick}>cambiar estado</button>
+          <h1><IoCartOutline/></h1>
+        <button onClick={handleClick}>cambiar estado</button>
+
       </ul>
     </div>
   </div>
@@ -53,4 +67,4 @@ function NavBar() {
     )
 }
 
-export default NavBar
+export default NavBar;
