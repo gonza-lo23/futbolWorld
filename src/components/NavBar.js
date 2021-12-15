@@ -2,6 +2,7 @@ import * as React from 'react';
 import '../styles/NavBar.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Link} from 'react-router-dom';
+import CartWidget from './CartWidget';
 import { FaFutbol } from "react-icons/fa";
 
 

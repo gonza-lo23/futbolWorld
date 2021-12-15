@@ -9,19 +9,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
 
-  const productos = [ 
-    {id:0, name: "mochila", price: 100},
-    {id:0, name: "caja", price: 100},
-    {id:0, name: "perro", price: 100},
-    {id:0, name: "oso", price: 100},
-    {id:0, name: "auto", price: 100},
-
-  ]
+  
   return (
-    <div className="App">
       <BrowserRouter>
       <NavBar props = {5}/>
-      <Routes>
+      <Routes> 
 
       <Route  path="*" component={NotFound}/>       
       <Route  exact path="/Home" component={Home}/>       
@@ -29,7 +21,7 @@ function App() {
       </Routes>
       <footer>esto es un footer</footer>
       </BrowserRouter>
-    </div>
+    
   );
 }
 
