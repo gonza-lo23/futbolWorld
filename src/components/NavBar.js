@@ -1,7 +1,6 @@
 import * as React from 'react';
 import '../styles/NavBar.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {Link} from 'react-router-dom';
 import CartWidget from './CartWidget';
 import { FaFutbol } from "react-icons/fa";
 
@@ -25,7 +24,8 @@ function NavBar({props}) {
         <div>
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark" >
   <div className="container-fluid">
-    <Link className="navbar-brand pl-5" to="/">Futbol World <FaFutbol /> </Link>
+    <a className="navbar-brand pl-5" href='#'>Futbol World <FaFutbol /> </a>
+        
     
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
@@ -33,22 +33,30 @@ function NavBar({props}) {
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav ml-auto">
         <li className="nav-item">
-          <Link className="nav-link  pr-5" aria-current="page" to="/Home">Home</Link>
+          <a className="nav-link  pr-5" aria-current="page" href='#'>Home</a>
         </li>
         <li className="nav-item">
-          <Link className="nav-link pr-5" to="/">Botas</Link>
+          <a className="nav-link pr-5" href='#'>Botas</a>
         </li>
         <li className="nav-item">
-          <Link className="nav-link pr-5" to="/">Camisetas</Link>
+          <a className="nav-link pr-5" href='#'>Camisetas</a>
         </li>
         
         <li className="nav-item">
-          <Link className="nav-link pr-5" to="/">Balones</Link>
+          <a className="nav-link pr-5" href='#'>Balones</a>
         </li>
         
         <li className="nav-item">
-          <Link className="nav-link pr-5" to="/">banderines</Link>
+          <a className="nav-link pr-5"href='#'>banderines</a>
         </li>
+      
+         <li>
+           <a href="#">
+             <CartWidget/>
+             </a>
+         
+         </li>
+      
       </ul>
     </div>
   </div>

@@ -10,10 +10,7 @@ const Body = () => {
         <div className='image'>
          <Carousel/>
          <h1>Nuestros productos</h1>
-          <Panels/>
-          <Panels/>
-
-         
+          <Panels/>         
         </div>
     );
 };
