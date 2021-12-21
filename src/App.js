@@ -15,8 +15,7 @@ function App() {
        
       <NavBar /> 
        <Home/>
-       <ItemListContainer props={5}/>
-       <h1>idsfjidsjfi</h1>
+       <ItemListContainer/>
       <footer>esto es un footer</footer>
        </div>
       

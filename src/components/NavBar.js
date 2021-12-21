@@ -7,18 +7,7 @@ import { FaFutbol } from "react-icons/fa";
 
 function NavBar({props}) {
   
-  const [counter, setCounter]= React.useState(0);
-
-  React.useEffect(()=>{
-    console.log("componente renderizado")
-  },[props])
-
-  const handleClick = () =>{
-    setCounter((prevState) => prevState + 1)
-  }
-  const handleClick2 = () =>{
-    setCounter((prevState) => prevState + 1)
-  }
+ 
 
     return (
         <div>
