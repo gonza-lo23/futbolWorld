@@ -5,11 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 function Panel() {
 
-  let b = document.getElementById('btn btn-primary');
   
-
-
-
     return (
         <div className='card2'>
             <div className="card">

@@ -12,8 +12,7 @@ function itemListContainer({props}) {
             <ItemList />
             <ItemCount 
             stock={5} 
-            initial={1} 
-            onAdd={()=>console.log(`agregaste al carrito items`)}/>
+            initial={1} />
         </div>
     )
 }
