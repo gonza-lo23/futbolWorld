@@ -1,5 +1,5 @@
 import React from 'react'
-import Balon from '../styles/balon.jpg'
+import Balon from '../styles/photos/balon.jpg'
 import '../styles/Panel.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 

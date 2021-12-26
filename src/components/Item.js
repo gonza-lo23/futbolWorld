@@ -1,9 +1,9 @@
 import React from 'react'
-import ss from '../styles/balon.jpg'
+import ss from '../styles/photos/balon.jpg'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import ItemCount from './itemCount';
 
-function Item({id, title, description, image, comprar,stock, initial}) {
+function Item({id, title, description, imagelo, comprar,stock, initial}) {
 
     return (
         <div className="card"  >

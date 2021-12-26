@@ -1,10 +1,10 @@
 import React from 'react';
 import '../styles/Carousel.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Liver from '../styles/liver.jpg';
-import Shirt from '../styles/shirt.jpg';
-import Puma from '../styles/puma.jpg';
-import S from '../styles/s.jpg';
+import Liver from '../styles/photos/liver.jpg';
+import Shirt from '../styles/photos/shirt.jpg';
+import Puma from '../styles/photos/puma.jpg';
+import S from '../styles/photos/s.jpg';
 
 
 function Carousel() {

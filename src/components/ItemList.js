@@ -1,5 +1,5 @@
 import * as React from 'react';
-import ss from '../styles/balon.jpg';
+import ss from '../styles/photos/balon.jpg';
 import Item from './Item';
 
 function ItemList() {
@@ -48,41 +48,13 @@ const comprarProducto = (product) =>{
 
 export default ItemList;
 
-const productos = [
-    {
-        id:0,
-        title: 'balon',
-        description: 'producto de alta gama marca adidas diseñado nasdkasmd',
-        image:'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.ferrersport.com%2Fblog%2Fcomo-elegir-botas-de-futbol&psig=AOvVaw1pZSFCM-KietN8SUT4VxF0&ust=1640435298970000&source=images&cd=vfe&ved=0CAgQjRxqFwoTCOidm-y3_PQCFQAAAAAdAAAAABAG',
-        stock:9,
-    },
-    {
-        id:1,
-        title: 'botines',
-        description: 'producto de alta gama marca adidas diseñado nasdkasmd',
-        image:{ss},
-        stock:9,
+const productos =  [
+            {
+                id:0,
+                title: "balon",
+                description: "producto de alta gama marca adidas diseñado nasdkasmd",
+                image:"http://www.decathlon.es/es/p/botas-de-futbol-puma-future-3-2-fg-ag-ninos-azul/_/R-p-X8659631?mc=8659631",
 
-    },{
-        id:2,
-        title: 'botines',
-        description: 'masdkasmdmasdmkasdm',
-        image:{ss},
-        stock:9,
-
-    },{
-        id:3,
-        title: 'botines',
-        description: 'producto de alta gama marca adidas diseñado nasdkasmd',
-        image:{ss},
-        stock:9,
-    },{
-        id:4,
-        title: 'botines',
-        description: 'producto de alta gama marca adidas diseñado nasdkasmd',
-        image:{ss}, 
-        stock:9,
-
-       },
-    
-]
+                stock:9
+            }
+        ]

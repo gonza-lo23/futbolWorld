@@ -1,0 +1,45 @@
+{
+    "products": [
+    {
+        "id":0,
+        "title": "balon",
+        "description": "producto de alta gama marca adidas diseñado nasdkasmd",
+        "image": "http://www.decathlon.es/es/p/botas-de-futbol-puma-future-3-2-fg-ag-ninos-azul/_/R-p-X8659631?mc=8659631",
+        "stock":9
+    },
+    
+    {
+        "id":1,
+        "title": "balon",
+        "description": "producto de alta gama marca adidas diseñado nasdkasmd",
+        "image": "../src/styles/photos/b.jpg",
+        "stock":9
+    },{
+        "id":2,
+        "title": "balon",
+        "description": "producto de alta gama marca adidas diseñado nasdkasmd",
+        "image": "../src/styles/photos/b.jpg",
+        "stock":9
+    },{
+        "id":3,
+        "title": "balon",
+        "description": "producto de alta gama marca adidas diseñado nasdkasmd",
+        "image": "../src/styles/photos/b.jpg",
+        "stock":9
+    },{
+        "id":4,
+        "title": "balon",
+        "description": "producto de alta gama marca adidas diseñado nasdkasmd",
+        "image": "../src/styles/photos/b.jpg",
+        "stock":9
+    },{
+        "id":5,
+        "title": "balon",
+        "description": "producto de alta gama marca adidas diseñado nasdkasmd",
+        "image": "../src/styles/photos/b.jpg",
+        "stock":9
+    }
+]
+
+    
+}

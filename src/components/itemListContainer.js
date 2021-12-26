@@ -10,9 +10,7 @@ function itemListContainer({props}) {
         <div>
             <h1>{props}</h1>
             <ItemList />
-            <ItemCount 
-            stock={5} 
-            initial={1} />
+            
         </div>
     )
 }
