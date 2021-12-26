@@ -28,7 +28,7 @@ function ItemCount({stock, initial, onAdd}) {
             <h1>{count}</h1>
            <button onClick={handleClickResta} type="button" className="btn btn-primary">-</button>
            <button onClick={handleClickSuma}type="button" className="btn btn-primary">+</button>
-           <br/> 
+           
         </div>
     );
 }
