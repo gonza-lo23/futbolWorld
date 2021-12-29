@@ -6,6 +6,8 @@ function ItemDetailContainer() {
 const [data, setData] = React.useState([]);
 const [loading, setLoading] = React.useState(false)
 
+  
+
    React.useEffect(()=>{
       const url = "http://localhost:3001/products";
       setLoading(true);
@@ -23,6 +25,25 @@ const [loading, setLoading] = React.useState(false)
 
    },[]);
 
+   const postProduct = async () =>{
+       const newProduct = 
+        {
+            "id":6,
+            "title": "pepe",
+            "description": "producto de alta gama marca adidas diseñado nasdkasmd",
+            "image": "../src/styles/photos/b.jpg",
+            "stock":9
+        };
+
+       const response = await fetch("http://localhost:3001/products",
+       {
+           method:"POST",
+           headers:{"Content-Type": "application/json"},
+           body: JSON.stringify(newProduct),
+       });
+
+       return response.json;
+   }
 
     return (
         <div>
@@ -34,7 +55,7 @@ const [loading, setLoading] = React.useState(false)
                   key={producto.id}
                   title={producto.title}
                   description={producto.description}
-                  image={producto.image}
+                  imagen={producto.imagen}
                   stock={producto.stock}                
                   />
               )

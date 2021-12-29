@@ -4,7 +4,7 @@
         "id":0,
         "title": "balon",
         "description": "producto de alta gama marca adidas diseñado nasdkasmd",
-        "image": "http://www.decathlon.es/es/p/botas-de-futbol-puma-future-3-2-fg-ag-ninos-azul/_/R-p-X8659631?mc=8659631",
+        "image": "../src/styles/photos/b.jpg",
         "stock":9
     },
     

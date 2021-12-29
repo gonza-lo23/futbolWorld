@@ -35,7 +35,7 @@ const comprarProducto = (product) =>{
                      key={producto.id}
                      title={producto.title}
                      description={producto.description}
-                     image={producto.image}
+                     imagen={producto.imagen}
                      comprar={comprarProducto}
                      stock={producto.stock}
                     />
@@ -51,10 +51,9 @@ export default ItemList;
 const productos =  [
             {
                 id:0,
-                title: "balon",
+                title: "sdfsdfsd",
                 description: "producto de alta gama marca adidas diseñado nasdkasmd",
-                image:"http://www.decathlon.es/es/p/botas-de-futbol-puma-future-3-2-fg-ag-ninos-azul/_/R-p-X8659631?mc=8659631",
-
+                image:"http://m.media-amazon.com/images/G/30/consumables/alberas/Deal_image_21-12._AC_SY230_.png",
                 stock:9
             }
         ]
