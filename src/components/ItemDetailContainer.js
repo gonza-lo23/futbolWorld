@@ -25,15 +25,7 @@ const [loading, setLoading] = React.useState(false)
 
    },[]);
 
-   const postProduct = async () =>{
-       const newProduct = 
-        {
-            "id":6,
-            "title": "pepe",
-            "description": "producto de alta gama marca adidas diseñado nasdkasmd",
-            "image": "../src/styles/photos/b.jpg",
-            "stock":9
-        };
+   
 
        const response = await fetch("http://localhost:3001/products",
        {
