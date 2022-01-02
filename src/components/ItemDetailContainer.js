@@ -27,15 +27,15 @@ const [loading, setLoading] = React.useState(false)
 
    
 
-       const response = await fetch("http://localhost:3001/products",
-       {
-           method:"POST",
-           headers:{"Content-Type": "application/json"},
-           body: JSON.stringify(newProduct),
-       });
+//        const response = await fetch("http://localhost:3001/products",
+//        {
+//            method:"POST",
+//            headers:{"Content-Type": "application/json"},
+//            body: JSON.stringify(newProduct),
+//        });
 
-       return response.json;
-   }
+//        return response.json;
+//    }
 
     return (
         <div>

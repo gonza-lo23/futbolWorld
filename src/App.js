@@ -1,5 +1,8 @@
 import * as React from 'react';
+import { render } from "react-dom";
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import NavBar from './components/NavBar';
+import Footer from './components/Footer';
 import Home from './pages/Home';
 // import NotFound from './pages/NotFound.jsx';
 import ItemListContainer from './components/itemListContainer';
@@ -11,14 +14,17 @@ function App() {
 
   return (
     <div className='app'>
-       
-       
+       <BrowserRouter>
       <NavBar /> 
-       <Home/>
-       <ItemListContainer/>
-      <footer>esto es un footer</footer>
+      <Routes>
+        <Route  path="/" element={<Home/>}/>
+       
+        <Route  path="teams" element={<ItemListContainer/>}/>
+        
+      </Routes>
+      <Footer>esto es un footer</Footer>
+       </BrowserRouter>
        </div>
-      
   );
 }
 
