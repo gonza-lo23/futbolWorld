@@ -1,7 +1,7 @@
 import React from 'react'
 import ss from '../styles/photos/balon.jpg'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import ItemCount from './itemCount';
+import ItemCount from './ItemCount';
 // id, title, description, imagelo, comprar,stock, initial
 function Item(props) {
 

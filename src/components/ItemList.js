@@ -1,5 +1,5 @@
 import * as React from 'react';
-import ss from '../styles/photos/balon.jpg';
+import Ss from '../styles/photos/balon.jpg';
 import Item from './Item';
 
 function ItemList() {
@@ -33,6 +33,7 @@ const comprarProducto = (product) =>{
                 return(
                     <Item
                      key={producto.id}
+                     category={producto.category}
                      title={producto.title}
                      description={producto.description}
                      imagen={producto.imagen}
@@ -51,7 +52,16 @@ export default ItemList;
 const productos =  [
             {
                 id:0,
-                title: "sdfsdfsd",
+                category:"botas",
+                title: "botas",
+                description: "producto de alta gama marca adidas diseñado nasdkasmd",
+                image:"http://m.media-amazon.com/images/G/30/consumables/alberas/Deal_image_21-12._AC_SY230_.png",
+                stock:9
+            },
+            {
+                id:1,
+                category:"camisetas",
+                title: "camisetas",
                 description: "producto de alta gama marca adidas diseñado nasdkasmd",
                 image:"http://m.media-amazon.com/images/G/30/consumables/alberas/Deal_image_21-12._AC_SY230_.png",
                 stock:9

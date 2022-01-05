@@ -1,6 +1,7 @@
 import React from 'react'
 import cart from '../styles/photos/cart.jpg'
 import '../styles/CartWidget.css'
+
 function CartWidget() {
     return (
         <div className='cart' >

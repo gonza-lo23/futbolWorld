@@ -5,7 +5,8 @@ import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 // import NotFound from './pages/NotFound.jsx';
-import ItemListContainer from './components/itemListContainer';
+import ItemListContainer from './components/ItemListContainer';
+import ItemDetailContainer from './components/ItemDetailContainer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -16,12 +17,14 @@ function App() {
     <div className='app'>
        <BrowserRouter>
       <NavBar /> 
+
       <Routes>
         <Route  path="/" element={<Home/>}/>
-       
-        <Route  path="teams" element={<ItemListContainer/>}/>
-        
+        <Route  path="/category/:category" element={<ItemListContainer/>}/>
+        <Route  path="/item/:id" element={<ItemDetailContainer/>}/>
+
       </Routes>
+
       <Footer>esto es un footer</Footer>
        </BrowserRouter>
        </div>

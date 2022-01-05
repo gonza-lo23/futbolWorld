@@ -1,9 +1,7 @@
 import * as React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
 import ItemList from './ItemList.js'
-
-import ItemCount from './itemCount.js';
+import ItemCount from './ItemCount.js';
 
 function itemListContainer({props}) {
     return (

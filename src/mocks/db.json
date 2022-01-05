@@ -2,6 +2,7 @@
     "products": [
     {
         "id":0,
+        "category":"balones",
         "title": "balon",
         "description": "producto de alta gama marca adidas diseñado nasdkasmd",
         "image": "../src/styles/photos/b.jpg",
@@ -10,31 +11,36 @@
     
     {
         "id":1,
-        "title": "balon",
+        "category":"botas",
+        "title": "botas",
         "description": "producto de alta gama marca adidas diseñado nasdkasmd",
         "image": "../src/styles/photos/b.jpg",
         "stock":9
     },{
         "id":2,
-        "title": "balon",
+        "category":"camisetas",
+        "title": "camisetas",
         "description": "producto de alta gama marca adidas diseñado nasdkasmd",
         "image": "../src/styles/photos/b.jpg",
         "stock":9
     },{
         "id":3,
         "title": "balon",
+        "category":"balones",
         "description": "producto de alta gama marca adidas diseñado nasdkasmd",
         "image": "../src/styles/photos/b.jpg",
         "stock":9
     },{
         "id":4,
-        "title": "balon",
+        "title": "camiseta",
+        "category":"camisetas",
         "description": "producto de alta gama marca adidas diseñado nasdkasmd",
         "image": "../src/styles/photos/b.jpg",
         "stock":9
     },{
         "id":5,
         "title": "balon",
+        "category":"balones",
         "description": "producto de alta gama marca adidas diseñado nasdkasmd",
         "image": "../src/styles/photos/b.jpg",
         "stock":9
