@@ -1,4 +1,4 @@
-import React from 'react'
+import * as React  from 'react'
 import ItemCount from './ItemCount'
 
 
@@ -11,6 +11,16 @@ import ItemCount from './ItemCount'
     price,
     stock
     }) => {
+
+     const [added, setAdded] = React.useState(false)
+
+     React.useEffect(()=>{
+       console.log('added', added);
+     }, [added])
+
+      const onAdd = () =>{
+        setAdded(true)
+      }
         return (
             <div className="container containerDetail">
               <div className='row'>
@@ -22,7 +32,10 @@ import ItemCount from './ItemCount'
                     <h5 className='catDetail'> Categoria: {category}</h5>
                     <h5 className='catDetail'>{description}</h5>
                     <h2 className='priceDetail'>{price}</h2>
-                    <ItemCount initial={1} stock={stock}/>
+                    <ItemCount 
+                    onAdd={onAdd} 
+                    initial={1} 
+                    stock={stock}/>
                 </div>
               </div>
             

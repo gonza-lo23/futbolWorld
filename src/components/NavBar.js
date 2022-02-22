@@ -1,14 +1,18 @@
 import * as React from 'react';
 import '../styles/NavBar.css';
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import CartWidget from './CartWidget';
 import { FaFutbol } from "react-icons/fa";
 import Home from '../pages/Home';
 
 
-function NavBar({props}) {
-  
+const NavBar = ({props}) => {
+  const categories = [
+    {id:'asdasd', address: '/productos', text: 'Todas'},
+    {id:'sakqowe', address: '/category/basica', text: 'Remeras Basicas'},
+    {id:'asdasd', address: '/category/estampada', text: 'Botas'},
+  ]
  
 
     return (
@@ -23,29 +27,32 @@ function NavBar({props}) {
     </button>
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav ml-auto">
+      <NavLink to={`/`}>
         <li className="nav-item">
           <a className="nav-link  pr-5" aria-current="page" href='/'>Home</a>
         </li>
+        </NavLink>
+        <NavLink to={`/category/botas`}>
         <li className="nav-item">
-        <Link to='/category/botas'>
-        <a className="nav-link pr-5" href='/category/category'>Botas</a>
-        </Link>
-          
+        <a className="nav-link pr-5" href='/category/category'>Botas</a>          
         </li>
+        </NavLink>
+         
+        <NavLink to={`/camisetas`}>
         <li className="nav-item">
           <a className="nav-link pr-5" href='#'>Camisetas</a>
         </li>
-        
+        </NavLink>
+        <NavLink to={`/balones`}>
         <li className="nav-item">
           <a className="nav-link pr-5" href='#'>Balones</a>
         </li>
-        
+        </NavLink>
+        <NavLink to={`/cart`}>
         <li className="nav-item">
-        <Link to='/Cart'>
           <a className="nav-link pr-5"href='../components/CartWidget'>Cart</a>
-          </Link>
         </li>
-      
+        </NavLink>
          <li>
            <a href="/">
              <CartWidget/>

@@ -1,25 +1,16 @@
 import * as React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import {userContext} from './CartContex.jsx';
 
 
-function Footer() {
+
+
+const Footer = () => {
+const userCompres = React.useContext(userContext)
     return (
-        <div className="footer">
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container-fluid">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <a class="nav-link active" aria-current="page" href="#">Abouts us </a>
-        <a class="nav-link" href="#">Help</a>
-        <a class="nav-link" href="#">Work with us</a>
-      </div>
-    </div>
-  </div>
-</nav>
-        </div>
+       <div>
+        <h1>{userCompres}</h1>
+       </div>
     )
 }
 

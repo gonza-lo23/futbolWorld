@@ -8,7 +8,7 @@ import ItemDetailContainer from './ItemDetailContainer';
 const Body = () => {
     return (
         <div className='image'>
-         <Carousel/>
+          <Carousel/> 
          <h1>Nuestros productos</h1>
          <ItemDetailContainer/>  
         </div>
@@ -16,3 +16,6 @@ const Body = () => {
 };
 
 export default Body;
+
+
+

@@ -20,9 +20,9 @@ function App() {
 
       <Routes>
         <Route  path="/" element={<Home/>}/>
-        <Route  path="/category/:category" element={<ItemListContainer/>}/>
-        <Route  path="/item/:id" element={<ItemDetailContainer/>}/>
-
+        <Route path="/productos" element={<ItemListContainer/>}/>
+        <Route  path="/category/:catId" element={<ItemListContainer/>}/>
+        <Route  path="/product/:itemId" element={<ItemDetailContainer/>}/>
       </Routes>
 
       <Footer>esto es un footer</Footer>
