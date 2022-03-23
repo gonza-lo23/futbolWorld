@@ -1,18 +1,18 @@
 import * as React from 'react'
 import cart from '../styles/photos/cart.jpg'
 import '../styles/CartWidget.css'
-import {userContext} from './CartContex'
+import CartContex from './CartContex'
 
 function CartWidget() {
-  const [userName, setUserName] = React.useState("carlos")
-  const lativia = React.useContext(userContext)
+ 
+  const {userName} = React.useContext(CartContex)
   
     return (
         <div className='cart' >
-          <img src={cart}alt="" />
-          <h4>{lativia}</h4>
+          <img src={cart}alt=""/>
+          <h4>{userName}</h4>
         </div>
     )
 }
 
-export default CartWidget
+export default CartWidget;

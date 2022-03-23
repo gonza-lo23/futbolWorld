@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import CartWidget from './CartWidget';
 import { FaFutbol } from "react-icons/fa";
 import Home from '../pages/Home';
+import CompraResumen from './CompraResumen';
 
 
 const NavBar = ({props}) => {
@@ -48,15 +49,17 @@ const NavBar = ({props}) => {
           <a className="nav-link pr-5" href='#'>Balones</a>
         </li>
         </NavLink>
-        <NavLink to={`/cart`}>
+        <NavLink to={`/CompraResumen`}>
         <li className="nav-item">
-          <a className="nav-link pr-5"href='../components/CartWidget'>Cart</a>
+          <a className="nav-link pr-5"href='./CompraResumen'>Cart</a>
         </li>
         </NavLink>
          <li>
-           <a href="/">
+           <NavLink to={`/CompraResumen`}>
+           <a href={CompraResumen}>
              <CartWidget/>
              </a>
+           </NavLink>
          
          </li>
       

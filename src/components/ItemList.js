@@ -1,5 +1,4 @@
 import * as React from 'react';
-import Ss from '../styles/photos/balon.jpg';
 import Item from './Item';
 
 function ItemList() {
@@ -7,20 +6,21 @@ function ItemList() {
 const [items, setItems] = React.useState([]);
 const [cargando, setCargando] = React.useState(false);
 
-React.useEffect(() => {
-    setCargando(true);
-    getProducts()
-    .then((result)=> setItems(result))
-    .finally(()=> setCargando(false));
-}, []);
+ React.useEffect(()=>{
+        setCargando(true)
+        getProducts()
+        .then((response)=>setItems(response))
+        .finally(()=>setCargando(false))
+    }, [])
 
-const getProducts =()=> { 
-    return new Promise ((resolve)=> {
-        setTimeout(() => {
+const getProducts = () => {
+    return new Promise ((resolve)=>{
+        setTimeout(()=>{
             resolve(productos)
-        }, 2000 );
-    });
-};
+        },2000)
+    })
+}
+
 
 const comprarProducto = (product) =>{
     console.log(`has comprado el producto ${product}`)
@@ -67,3 +67,7 @@ const productos =  [
                 stock:9
             }
         ]
+        
+        
+        
+        

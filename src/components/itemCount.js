@@ -1,13 +1,16 @@
-import React, {useState, useEffect} from 'react';
+import * as React from 'react';
+import CartContex from './CartContex';
 
-function ItemCount({ stock, initial, onAdd}) {
 
-    const [count, setCount] = useState(1);
+function ItemCount({ stock, initial}) {
 
-    useEffect(() => {
-        console.log(`items ${count}`)
+    const [count, setCount] = React.useState(0);
+    const {userName, setUserName} = React.useContext(CartContex)
+
+    React.useEffect(() => {
+        console.log(userName)
         
-    }, [count])
+    }, [userName])
 
     const handleClickSuma = () => {
         setCount((f)=>f < stock ? f + 1 : f)
@@ -17,10 +20,7 @@ function ItemCount({ stock, initial, onAdd}) {
     }
     
     const Add = () => {
-        count === 0 ? console.log(`no hay articulos para agregar`)
-        :
-        console.log(`agregaste ${count} elementos a tu carrito`)
-        
+       setUserName((s)=>s)
     }
    
     return (
@@ -28,9 +28,9 @@ function ItemCount({ stock, initial, onAdd}) {
             <h1>{count}</h1>
            <button onClick={handleClickResta} type="button" className="btn btn-primary">-</button>
            <button onClick={handleClickSuma}type="button" className="btn btn-primary">+</button>
-           <button onClick={onAdd}>Agregar al carrito</button>
-           
+           <button onClick={Add}>Agregar al carrito</button>  
         </div>
+        
     );
 }
 

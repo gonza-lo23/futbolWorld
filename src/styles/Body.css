@@ -1,3 +1,3 @@
-image {
-  display: flex;
+body {
+  display: grid;
 }
